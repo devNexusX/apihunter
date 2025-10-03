@@ -1,0 +1,5 @@
+# API Endpoints discovered on 2025-10-03 06:34:41
+# Total endpoints: 2
+
+https://httpbin.org/spec.json
+https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700

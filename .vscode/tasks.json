@@ -1,0 +1,128 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run API Hunter",
+			"type": "shell",
+			"command": "C:/Users/305628/source/repos/apiHunter/.venv/Scripts/python.exe",
+			"args": [
+				"main.py",
+				"${input:targetUrl}"
+			],
+			"isBackground": false,
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Run API Hunter - Help",
+			"type": "shell",
+			"command": "C:/Users/305628/source/repos/apiHunter/.venv/Scripts/python.exe",
+			"args": ["main.py", "--help"],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Run API Hunter - Demo",
+			"type": "shell",
+			"command": "C:/Users/305628/source/repos/apiHunter/.venv/Scripts/python.exe",
+			"args": ["main.py", "https://httpbin.org", "--verbose"],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Run API Hunter with Authentication",
+			"type": "shell",
+			"command": "C:/Users/305628/source/repos/apiHunter/.venv/Scripts/python.exe",
+			"args": [
+				"main.py",
+				"${input:targetUrl}",
+				"--username", "${input:username}",
+				"--password", "${input:password}",
+				"--login-type", "${input:loginType}",
+				"--verbose"
+			],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Run API Hunter with Spond Token",
+			"type": "shell",
+			"command": "C:/Users/305628/source/repos/apiHunter/.venv/Scripts/python.exe",
+			"args": [
+				"main.py",
+				"${input:targetUrl}",
+				"--spond-token", "${input:spondToken}",
+				"--scan-common-paths",
+				"--include-swagger",
+				"--auto-save",
+				"--format", "detailed",
+				"--verbose"
+			],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{
+			"id": "targetUrl",
+			"description": "Target URL to scan for API endpoints",
+			"default": "https://httpbin.org",
+			"type": "promptString"
+		},
+		{
+			"id": "username",
+			"description": "Username for authentication",
+			"default": "",
+			"type": "promptString"
+		},
+		{
+			"id": "password",
+			"description": "Password for authentication",
+			"default": "",
+			"type": "promptString"
+		},
+		{
+			"id": "loginType",
+			"description": "Login type",
+			"default": "spond",
+			"options": ["spond", "generic"],
+			"type": "pickString"
+		},
+		{
+			"id": "spondToken",
+			"description": "Spond authentication token",
+			"default": "",
+			"type": "promptString"
+		}
+	]
+}

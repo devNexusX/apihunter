@@ -1,0 +1,77 @@
+================================================================================
+API ENDPOINTS DISCOVERY REPORT
+================================================================================
+Target URL: https://spond.com/client/sponds/30C89C599DC14F03B81C46E72C6C676C
+Scan Date: 2025-10-03 07:58:28
+Total Endpoints Found: 11
+================================================================================
+
+🟢 HIGH CONFIDENCE ENDPOINTS (8 endpoints)
+------------------------------------------------------------
+ 1. URL: https://spond.com/client/api/user
+    Method: GET
+    Source: authenticated_endpoint_test
+    Confidence: 0.95
+
+ 2. URL: https://spond.com/client/api/sponds
+    Method: GET
+    Source: authenticated_endpoint_test
+    Confidence: 0.95
+
+ 3. URL: https://spond.com/client/api/events
+    Method: GET
+    Source: authenticated_endpoint_test
+    Confidence: 0.95
+
+ 4. URL: https://spond.com/client/api/groups
+    Method: GET
+    Source: authenticated_endpoint_test
+    Confidence: 0.95
+
+ 5. URL: https://spond.com/client/api/calendar
+    Method: GET
+    Source: authenticated_endpoint_test
+    Confidence: 0.95
+
+ 6. URL: https://spond.com/client/api/invitations
+    Method: GET
+    Source: authenticated_endpoint_test
+    Confidence: 0.95
+
+ 7. URL: https://spond.com/client/api/messages
+    Method: GET
+    Source: authenticated_endpoint_test
+    Confidence: 0.95
+
+ 8. URL: https://stripe.com/en-no/legal/privacy-center#:~:text=Stripe%20may%20collect%20personal%20data,that%20connect%20to%20its%20services
+    Method: GET
+    Source: authenticated_data_attr
+    Confidence: 0.90
+
+
+🟡 MEDIUM CONFIDENCE ENDPOINTS (3 endpoints)
+------------------------------------------------------------
+ 1. URL: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css
+    Method: GET
+    Source: comment
+    Confidence: 0.60
+
+ 2. URL: https://challenges.cloudflare.com/turnstile/v0/api.js
+    Method: GET
+    Source: comment
+    Confidence: 0.60
+
+ 3. URL: https://spond.com/client/sponds/Spond is the best service for organizing sports teams, school bands and other groups. We send out millions of invitations each month on behalf of our users.
+    Method: GET
+    Source: meta_tag
+    Confidence: 0.50
+
+
+================================================================================
+SUMMARY
+================================================================================
+High Confidence: 8 endpoints
+Medium Confidence: 3 endpoints
+Low Confidence: 0 endpoints
+Total: 11 endpoints
+================================================================================

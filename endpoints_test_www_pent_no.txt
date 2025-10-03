@@ -1,0 +1,5 @@
+# API Endpoints discovered on 2025-10-03 06:34:17
+# Total endpoints: 2
+
+https://www.datadoghq-browser-agent.com/datadog-logs.js
+https://www.pent.no/json

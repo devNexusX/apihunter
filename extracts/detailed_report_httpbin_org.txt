@@ -1,0 +1,32 @@
+================================================================================
+API ENDPOINTS DISCOVERY REPORT
+================================================================================
+Target URL: https://httpbin.org
+Scan Date: 2025-10-03 06:38:54
+Total Endpoints Found: 2
+================================================================================
+
+🟢 HIGH CONFIDENCE ENDPOINTS (1 endpoints)
+------------------------------------------------------------
+ 1. URL: https://httpbin.org/spec.json
+    Method: GET
+    Source: javascript
+    Confidence: 1.00
+
+
+🟡 MEDIUM CONFIDENCE ENDPOINTS (1 endpoints)
+------------------------------------------------------------
+ 1. URL: https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700
+    Method: GET
+    Source: comment
+    Confidence: 0.60
+
+
+================================================================================
+SUMMARY
+================================================================================
+High Confidence: 1 endpoints
+Medium Confidence: 1 endpoints
+Low Confidence: 0 endpoints
+Total: 2 endpoints
+================================================================================
